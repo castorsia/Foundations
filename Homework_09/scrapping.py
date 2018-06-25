@@ -119,7 +119,7 @@ df.to_csv("briefing.csv", index=False)
 
 response = requests.post(
         "https://api.mailgun.net/v3/sandboxc4d2a1094a8d414fa2b50867663d5394.mailgun.org/messages",
-        auth=("api", "c9028651bc11b5b66748bbb223f8ab16-0470a1f7-df132c8b"),
+        auth=("api", "API"),
         files=[("briefing.csv", open("briefing.csv"))],
         data={"from": "Mailgun Sandbox <postmaster@sandboxc4d2a1094a8d414fa2b50867663d5394.mailgun.org>",
               "to": "Ilias Stathatos <is2594@columbia.edu>",
